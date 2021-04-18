@@ -24,20 +24,46 @@
             margin-left: 20px;
         }     
     }
-    // .carousel {
-    //     width: 350px;
-    //     // &__inner {
-    //     //     &__img {
-    //     //         width: 350px;
-    //     //     }
-    //     // }
-    //     .carousel__inner {
-    //         &__slick-dots {
-    //             display: none;
-    //         }
-    //     }
-        
-    // }
+    .carousel {
+        .slick-prev, .slick-next {
+            display: none;
+        }
+        &__inner {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+            
+        }
+        .slick-dots {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+        }
+    }
+    .catalog {
+        &__content {
+            justify-content: space-around;
+        }
+    }
+    .feed {
+        padding-left: 20px;
+    }
+    .footer {
+        &__info {
+            width: 400px;
+            height: 250px;
+        }
+        &__addr {
+            font-size: 16px;
+        }
+    }
+    .pageup {
+        bottom: 30px;
+        right: 30px;
+        width: 30px;
+        height: 30px;
+    }
 }
 @media (max-width: 767px) {
     .header {
@@ -122,6 +148,10 @@
             margin: 30px 10px 0 10px;
             align-items: center;
         }
+        &__item {
+            margin-bottom: 10px;
+        }
+        
     }
     .consultation {
         padding: 50px 0 50px 0;
@@ -139,6 +169,74 @@
             text-align: center;
         }
         
+    }
+    .title {
+        font-size: 27px;
+    }
+    .catalog {
+        &__tabs {
+            padding: 0 20px 0 20px;
+        }
+        &__tab {
+            font-size: 16px;
+        }
+    }
+    .footer {
+        height: 530px;
+    }
+    .pageup {
+        bottom: 25px;
+        right: 25px;
+        width: 25px;
+        height: 25px;
+    }
+}
+@media (max-width: 320px) {
+    .feed-form {
+        width: 280px;
+    }
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        &__tab {
+            margin-top: 10px;
+        }
+    }
+    .title {
+        font-size: 25px;
+    }
+    .feed {
+        &__item {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__text {
+            margin-top: 20px;
+        }
+        &__text {
+            margin-left: 10px;
+            padding-right: 10px;
+        }
+        &__subtitle, &__count {
+            text-align: center;
+        }
+    }
+    .modal {
+        width: 215px;
+    }
+    .feed-form {
+        &_mt25 {
+            width: 150px;
+        }
+    }
+    .pageup {
+        bottom: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
     }
     
 }
